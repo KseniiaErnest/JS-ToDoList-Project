@@ -1,0 +1,74 @@
+body {
+  background-color:#3b8d99;
+  background-image: url('coffeepic.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+
+}
+
+.header, .container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;;
+  background: linear-gradient(to left,#aa4b6b, #3b8d99);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+.inputField {
+  padding: 10px;
+  width: 40%;
+  border: none;
+}
+
+.btn {
+  padding: 20px;
+  background-color:#3b8d99;
+  border: none;
+}
+
+.toDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.toDoAdded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ae5f75;
+  list-style: none;
+  height: 60px;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid #cdc7be;
+}
+
+.toDoCompleted {
+  background-color: #8fd9a8;
+  color: black;
+  font-weight: bold;
+  text-decoration: line-through;
+  transition: all 1s ease;
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
